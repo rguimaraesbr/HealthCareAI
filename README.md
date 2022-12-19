@@ -1,5 +1,5 @@
 
-# Aplicação de  Modelos de Redes Neurais Convolucionais na classificação de exames histológicos de Cancer no Seio 
+# Aplicação de  Modelos de Redes Neurais Convolucionais na classificação de exames histológicos de Cancer de Mama
 
 #### Aluno: [Robson Guimarães](https://github.com/rguimaraesbr)
 #### Orientadora: [Leonardo ](https://github.com/link_do_github).
