@@ -13,7 +13,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
-    - [Nome do Trabalho 1](https://link_do_trabalho.com).
+    - Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases ]([https://pubmed.ncbi.nlm.nih.gov/27563488/]).
     - [Nome do Trabalho 2](https://link_do_trabalho.com).
 
 ---
