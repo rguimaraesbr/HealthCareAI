@@ -20,9 +20,11 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-O Carcinoma Ductal Invasivo (CDI) é o subtipo mais comum de todos os cânceres de mama. O câncer de mama é a forma mais comum de câncer em mulheres. Identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.O diagnóstico rápido, preciso e precoce do câncer melhora a probabilidade de sobrevivência. Os modelos de aprendizado de máquina podem ser implantados global ou localmente e podem processar grandes somas de dados em uma fração do tempo que os humanos levam.
+O Carcinoma Ductal Invasivo (CDI) é o subtipo mais comum de todos os cânceres de mama. O câncer de mama é a forma mais comum de câncer em mulheres. Identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.O diagnóstico rápido, preciso e precoce do câncer melhora a probabilidade de sobrevivência. 
 
-Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas utilizadas inicialmente em xx, inicialmente iremos realizar a analise do Dataset, depois aplicar diversas redese convolucionais para analise de um fragmento do dataset. A partir da benchmark entres as redes, iremos aplicar a todo o dataset. 
+Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas utilizadas inicialmente em xx.
+
+Como passo inicial realizaremos a análise do Dataset, depois aplicaremos diversos modelos de redes convolucionais para análise de um fragmento do dataset. A partir da comparação entres o resultados da aplicação das redes, iremos aplicar a todo o dataset e mostrar os resultados obtidos.
 
 
 
