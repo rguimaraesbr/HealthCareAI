@@ -36,7 +36,21 @@ Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais fa
 
 Juntamente com o câncer de pulmão, cólon e estômago, o câncer de mama mata 700.000 pessoas todos os anos nos Estados Unidos. Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, a taxa de sobrevida em cinco anos é de 86%. Se o câncer se espalhou para áreas distantes do  corpo, a taxa de sobrevivência de cinco anos é de 28%.
 
-Aplicação de inteligencia artificial na medicina
+## 1.2 Aplicação de inteligencia artificial na medicina
+
+A Inteligencia Artifial tem sido cada vez mais empregada na medicina e está ajudando a salvar vidas de uma ampla variedade de condições médicas. 
+
+A aplicação do aprendizado de máquina na medicina é vasta e um tópico extremamente complexo por si só, mas algumas das principais áreas incluem:
+
+    Medicina de Precisão - Adaptação de medicamentos para indivíduos
+    Diagnóstico por imagem médica -Diagnóstico de doenças com base em imagens, etc.)
+    Descoberta de drogas - geração de estruturas como proteínas ou moléculas semelhantes a drogas, previsão de bioatividade, etc.
+
+
+Diagnóstico por imagem médica é um campo que está ajudando a automatizar e até mesmo melhorar a precisão do diagnóstico com base em imagens médicas.
+
+Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de prática, intuição e experiência para diagnosticar com um relativo nível de certeza se alguém sofre de uma condição ou não com base em imagens médicas. Automatizar esse processo tem implicações significativas para a velocidade do diagnóstico - e quanto mais rápido alguém for diagnosticado, mais rápido poderá receber tratamento. Em alguns casos, esse tempo pode ser essencial.
+
 
 Redes Convolucionais
 
