@@ -24,7 +24,7 @@ O Carcinoma Ductal Invasivo (CDI) é o subtipo mais comum de todos os cânceres 
 
 Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas utilizadas inicialmente em xx.
 
-Como passo inicial realizaremos a análise do Dataset, depois aplicaremos diversos modelos de redes convolucionais para análise de um fragmento do dataset. A partir da comparação entres o resultados da aplicação das redes, iremos aplicar a todo o dataset e mostrar os resultados obtidos.
+Como passo inicial realizaremos a análise do Dataset, depois aplicaremos diversos modelos de redes convolucionais para análise de um fragmento do dataset. A partir da comparação entres o resultados da aplicação das redes,escolheremos uma rede para aplicar todo o conjunto de amostras, explicitando os resultados obtidos.
 
 
 
