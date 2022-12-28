@@ -13,7 +13,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
-    - Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases ]([https://pubmed.ncbi.nlm.nih.gov/27563488/]).
+    - [Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases ](https://pubmed.ncbi.nlm.nih.gov/27563488/).
     - [Nome do Trabalho 2](https://link_do_trabalho.com).
 
 ---
@@ -29,12 +29,15 @@ Como passo inicial realizaremos a análise do Dataset, depois aplicaremos divers
 
 
 ### 1. Introdução
+No Brasil, segundo o Instituto Nacional de Câncer (INCA), o câncer de mama também é o tipo de câncer que mais acomete as mulheres no país (excluídos os tumores de pele não melanoma). Para 2019, foram estimados 59.700 casos novos, o que representa uma taxa de incidência de 51,29 casos por 100 mil mulheres. A única região do país em que o câncer de mama não é o mais comum entre as mulheres é a Norte, onde o de colo de útero ocupa a primeira posição.
 
-O câncer mata até 10 milhões de pessoas todos os anos e é uma das principais causas de morte no mundo.Tumores são feixes de células que não deveriam se agrupar e crescem em pedaços sólidos. Os tumores podem ser benignos (não cancerígenos) e confinados a uma região específica e podem não causar problemas. Eles podem crescer e causar problemas devido ao tamanho. Se um tumor começa a crescer fora do grupo de células - torna-se maligno (cancerígeno). O câncer pode invadir o tecido local ou metastatizar e atacar outros tecidos. Temos uma gama de informação sobre tumores e câncer, incluindo subtipos e seus graus, mas o conjunto de dados com o qual estamos trabalhando simplesmente classifica as imagens como não cancerígenas (benignas) e cancerosas (malignas). O Carcinoma Ductal Invasivo (CDI) é de longe o subtipo de câncer de mama mais comum, representando 80% dos casos.
+Com uma taxa de 13,68 óbitos/100 mil mulheres em 2015, a mortalidade por câncer de mama (ajustada pela população mundial) apresenta uma curva ascendente e representa a primeira causa de morte por câncer nas mulheres brasileiras. O Sul e o Sudeste são as regiões que apresentam as maiores taxas de mortalidade, com 15,26 e 14,56 óbitos/100 mil mulheres em 2015, respectivamente.
+
+Tumores são feixes de células que não deveriam se agrupar e crescem em pedaços sólidos. Os tumores podem ser benignos (não cancerígenos) e confinados a uma região específica e podem não causar problemas. Eles podem crescer e causar problemas devido ao tamanho. Se um tumor começa a crescer fora do grupo de células - torna-se maligno (cancerígeno). O câncer pode invadir o tecido local ou metastatizar e atacar outros tecidos. Temos uma gama de informação sobre tumores e câncer, incluindo subtipos e seus graus, mas o conjunto de dados com o qual estamos trabalhando simplesmente classifica as imagens como não cancerígenas (benignas) e cancerosas (malignas). O Carcinoma Ductal Invasivo (CDI) é de longe o subtipo de câncer de mama mais comum, representando 80% dos casos.
 
 Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais facilmente tratável quando detectado precocemente. A Histologia estuda os tecidos e a Patologia estuda as doenças. A histopatologia é a ciencia que estuda as doenças em tecidos,  patologistas examinam imagens de tecido (imagens de histologia) e chegam a um veredicto. De certa forma, os patologistas estão realizando a classificação (positiva ou negativa) com base em padrões e ocorrências nas imagens (características visuais). Este é um processo longo e trabalhoso, requerendo muita experiência.
 
-Juntamente com o câncer de pulmão, cólon e estômago, o câncer de mama mata 700.000 pessoas todos os anos nos Estados Unidos. Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, a taxa de sobrevida em cinco anos é de 86%. Se o câncer se espalhou para áreas distantes do  corpo, a taxa de sobrevivência de cinco anos é de 28%.
+Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, a taxa de sobrevida em cinco anos é de 86%. Se o câncer se espalhou para áreas distantes do  corpo, a taxa de sobrevivência de cinco anos é de 28%.
 
 ## 1.2 Aplicação de inteligencia artificial na medicina
 
@@ -52,7 +55,7 @@ Diagnóstico por imagem médica é um campo que está ajudando a automatizar e a
 Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de prática, intuição e experiência para diagnosticar com um relativo nível de certeza se alguém sofre de uma condição ou não com base em imagens médicas. Automatizar esse processo tem implicações significativas para a velocidade do diagnóstico - e quanto mais rápido alguém for diagnosticado, mais rápido poderá receber tratamento. Em alguns casos, esse tempo pode ser essencial.
 
 
-Redes Convolucionais
+## 1.3 Redes Convolucionais e Transfer Learning aplicadas ao diagnostico de cancer de mama
 
 Final da Introducao
 
@@ -81,7 +84,11 @@ Resultados
 
 ### 4. Conclusões
 
-Resumo do que fizemos
+Este trabalho utilizou redes neurais convolucionais em um banco de dados de xxx imagens histopatologicas de xx pacientes, classificando-os em duas classes: cancer e nao cancer. Durante o treinamento das redes, utilizamos o transfer learning das seguintes arquiteturas de redes neurais convolucionais: AlexNet, GoogLeNet, ResNet-18, VGG-16 e VGG-19 para uma pequena porçao dos dados. Escolhemos a EfficientNet0 para poder rodar o total das amostras 
+
+Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama.
+
+
 Conclusao
 Proximos trabalhos
 
