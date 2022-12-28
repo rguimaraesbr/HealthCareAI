@@ -15,6 +15,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
     - [Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases ](https://pubmed.ncbi.nlm.nih.gov/27563488/).
     - [Nome do Trabalho 2](https://link_do_trabalho.com).
+    
 
 ---
 
@@ -56,6 +57,23 @@ Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de 
 
 
 ## 1.3 Redes Convolucionais e Transfer Learning aplicadas ao diagnostico de cancer de mama
+
+O Transfer Learning xxx   
+
+Existe uma carencia de bases de imagens histologicas, com isso utilizaremos as redes ja pre treinadas e rodaremos em cima de uma amostra percentual de todo o dataset. 
+
+Nesse trabalho consideramos as seguintes redes covolucionais 
+
+1 - Basica, criada a partir x - descricao sucinta
+
+2 - EfficientNet0 - descricao sucinta com referencia
+
+3 - Resnet - descricao sucinta com referencia
+
+4 - xxx - descricao sucinta com referencia
+
+
+
 
 Final da Introducao
 
