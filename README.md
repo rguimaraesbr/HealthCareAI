@@ -36,7 +36,7 @@ Tumores são feixes de células que não deveriam se agrupar e crescem em pedaç
 
 Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais facilmente tratável quando detectado precocemente. A Histologia estuda os tecidos e a Patologia estuda as doenças. A histopatologia é a ciencia que estuda as doenças em tecidos,  patologistas examinam imagens de tecido (imagens de histologia) e chegam a um veredicto. De certa forma, os patologistas estão realizando a classificação (positiva ou negativa) com base em padrões e ocorrências nas imagens (características visuais). Este é um processo longo e trabalhoso, requerendo muita experiência.
 
-Inserir imagem histopatologia
+[Ciclo de Analise Histopatologico](https://pubmed.ncbi.nlm.nih.gov/27563488/#&gid=article-figures&pid=figure-1-uid-0)
 
 Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, esta taxa é de 86% e caso tenha se  espalhado para áreas distantes do  corpo,  é de 28%.
 
