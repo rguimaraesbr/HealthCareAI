@@ -59,6 +59,12 @@ Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de 
 O Transfer Learning xxx   
 
 Existe uma carencia de bases de imagens histologicas, com isso utilizaremos as redes ja pre treinadas e rodaremos em cima de uma amostra percentual de todo o dataset. 
+Com isso utilizaremos redes CNN pre treinadas, utilziando Transfer Learning
+. Podemos citar como vantagens dessa abordagem:
+• Pode-se usar modelos que foram cuidadosamente projetados por especialistas
+• Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
+• Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
+
 
 Nesse trabalho consideramos as seguintes redes covolucionais 
 
@@ -114,6 +120,7 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 ### F1-Score
 É a media hamônica entre precisão e recall. Se olharmos para précisão e recall, essas métricas visam ajudar a detectar tumores malignos.No entanto, a precisão é sensível a falsos positivos, enquanto o recall é afetada por falsos negativos. Assim, o F1 Score fornece uma visão geral, em que valores altos podem indicar que o modelo tem um bom desempenho, não dando falsas classificações
 
+![f1score](https://user-images.githubusercontent.com/79609143/210003249-3ba596de-3af3-45c9-8e08-40f027e59bfb.png)
 
 
 Otimizacao de parametros
