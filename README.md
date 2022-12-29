@@ -109,8 +109,11 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 #### Recall
 É a razão entre os verdadeiros positivos e verdadeiros positivos mais falsos positivos. Esta metrica indica que o algoritmo está funcionando bem na identificação de verdadeiros positivos. Por outro lado, se esta métrica for baixa,pode significar que um grande número de tumores benignos está sendo classificado de forma errada. Assim, esta métrica é fundamental para minimizar onúmero de falsos negativos, que é o pior cenário para o paciente.
 
+![recall](https://user-images.githubusercontent.com/79609143/210002729-11060673-d8ce-47be-b93c-bbf5202ccc5f.png)
+
 ### F1-Score
 É a media hamônica entre precisão e recall. Se olharmos para précisão e recall, essas métricas visam ajudar a detectar tumores malignos.No entanto, a precisão é sensível a falsos positivos, enquanto o recall é afetada por falsos negativos. Assim, o F1 Score fornece uma visão geral, em que valores altos podem indicar que o modelo tem um bom desempenho, não dando falsas classificações
+
 
 
 Otimizacao de parametros
