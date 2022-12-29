@@ -83,9 +83,9 @@ Fazendo a reconstrução de uma imagem so com base nos arquivos, conseguimos ver
 
 ![breast cancer](https://user-images.githubusercontent.com/79609143/210016132-a2059f90-abd2-4350-8b02-81b9abd0687c.png)
 
-Após analisar todo o dataset vimos a seguinte distribuição
+Após analisar todo o dataset obtivemos a seguinte distribuição
 
-
+![class imbalance](https://user-images.githubusercontent.com/79609143/210016827-4140508d-4fea-442a-90e6-99478ae6da21.png)
 
 
 
