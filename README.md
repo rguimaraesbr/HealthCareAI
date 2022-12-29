@@ -81,6 +81,10 @@ Cada patch tem um formato de nome distinto - uxXyYclassC.png, onde u é o ID do 
 
 Fazendo a reconstrução de uma imagem so com base nos arquivos, conseguimos ver a composicao 
 
+![breast cancer](https://user-images.githubusercontent.com/79609143/210016132-a2059f90-abd2-4350-8b02-81b9abd0687c.png)
+
+Após analisar todo o dataset vimos a seguinte distribuição
+
 
 
 
