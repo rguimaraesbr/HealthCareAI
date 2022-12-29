@@ -17,7 +17,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
     - [On Convolutional Neural Networks and Transfer Learning for Classifying Breast Cancer on Histopathological Images Using GPU](https://www.researchgate.net/publication/343891882_On_Convolutional_Neural_Networks_and_Transfer_Learning_for_Classifying_Breast_Cancer_on_Histopathological_Images_Using_GPU).
     - [EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks](https://arxiv.org/abs/1905.11946).
     - [Breast cancer histopathology image classification using AlexNet](https://ieeexplore.ieee.org/abstract/document/9036160).
-    
+    - [Computer Assisted Diagnosis of Breast Cancer Using Histopathology Images and Convolutional Neural Networks](https://ieeexplore.ieee.org/abstract/document/9036160).
 
 ---
 
