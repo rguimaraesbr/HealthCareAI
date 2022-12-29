@@ -14,7 +14,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 - Trabalhos relacionados: <!-- caso não aplicável, remover estas linhas -->
     - [Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases ](https://pubmed.ncbi.nlm.nih.gov/27563488/).
-    - [Nome do Trabalho 2](https://link_do_trabalho.com).
+    - [On Convolutional Neural Networks and Transfer Learning for Classifying Breast Cancer on Histopathological Images Using GPU](https://www.researchgate.net/publication/343891882_On_Convolutional_Neural_Networks_and_Transfer_Learning_for_Classifying_Breast_Cancer_on_Histopathological_Images_Using_GPU).
     
 
 ---
@@ -56,7 +56,7 @@ Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de 
 
 ## 1.3 Redes Convolucionais e Transfer Learning aplicadas ao diagnostico de cancer de mama
 
-O Transfer Learning xxx   
+  
 
 Existe uma carencia de bases de imagens histologicas, com isso utilizaremos as redes ja pre treinadas  utilziando Transfer Learning
 Podemos citar como vantagens dessa abordagem:
@@ -64,25 +64,10 @@ Podemos citar como vantagens dessa abordagem:
 • Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
 • Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
 
+Utilizamos nesse trabalho 4 redes: uma rede escrita "from scratch", EfficientNet0 da Google, Resnet e Xception da Google
 
-Nesse trabalho consideramos as seguintes redes covolucionais 
+A partir de uma analise comparativa com uma amostra de todo o dataset, escolhemos uma rede para rodar todo o dataset de forma otimizada.
 
-1 - Basica, criada a partir x - descricao sucinta
-
-2 - EfficientNet0 - descricao sucinta com referencia
-
-3 - Resnet - descricao sucinta com referencia
-
-4 - xxx - descricao sucinta com referencia
-
-
-
-
-Final da Introducao
-
-
-
-Proin feugiat nulla sem. Phasellus consequat tellus a ex aliquet, quis convallis turpis blandit. Quisque auctor condimentum justo vitae pulvinar. Donec in dictum purus. Vivamus vitae aliquam ligula, at suscipit ipsum. Quisque in dolor auctor tortor facilisis maximus. Donec dapibus leo sed tincidunt aliquam.
 
 ### 2. Modelagem
 
