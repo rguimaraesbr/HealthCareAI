@@ -94,7 +94,8 @@ Escolha da rede, porque?
 Aplicaçao da rede 
 
 ## 3.1 Métricas 
-Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiropositivos e verdadeiros negativos são classificações corretas, ou seja, umatumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações erradasções, ou seja, tumores classificados inversamente (um tumor maligno quedeve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
+Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiropositivos e verdadeiros negativos são classificações corretas, ou seja, umatumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações 
+erradasções, ou seja, tumores classificados inversamente (um tumor maligno quedeve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
 #### Precisão 
 Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos além de falsos positivos. Assim, uma baixa precisão indica que o número de classificações corretas (malignos) é muito baixo, ou o número de falsos positivos (tumores benignos classificados como malignos) é alta
 
@@ -103,6 +104,13 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 #### Acurácia 
 É o percentual de classificações corretas, uma acurácia baixa significa que o numero de classificações incorretas (Falsos positivos e Falsos Negativos) é alta. 
 
+![acuracia](https://user-images.githubusercontent.com/79609143/209997654-6d652b0b-fc37-4779-8d84-f4e4a02808b7.png)
+
+#### Recall
+É a razão entre os verdadeiros positivos e verdadeiros positivos mais falsos positivos. Esta metrica indica que o algoritmo está funcionando bem na identificação de verdadeiros positivos. Por outro lado, se esta métrica for baixa,pode significar que um grande número de tumores benignos está sendo classificado de forma errada. Assim, esta métrica é fundamental para minimizar onúmero de falsos negativos, que é o pior cenário para o paciente.
+
+### F1-Score
+É a media hamônica entre precisão e recall. Se olharmos para précisão e recall, essas métricas visam ajudar a detectar tumores malignos.No entanto, a precisão é sensível a falsos positivos, enquanto o recall é afetada por falsos negativos. Assim, o F1 Score fornece uma visão geral, em que valores altos podem indicar que o modelo tem um bom desempenho, não dando falsas classificações
 
 
 Otimizacao de parametros
