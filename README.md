@@ -66,7 +66,7 @@ Podemos citar como vantagens dessa abordagem:
 
 Utilizamos nesse trabalho 4 redes: uma rede escrita "from scratch", EfficientNet0 da Google, Resnet e Xception da Google
 
-A partir de uma analise comparativa com uma amostra de todo o dataset, escolhemos uma rede para rodar todo o dataset de forma otimizada.
+A partir de uma analise comparativa da utilizacao destas redes como classificadores numa amostra de todo o dataset, escolhemos uma rede para rodar o dataset integralmente de forma otimizada.
 
 
 ### 2. Modelagem
