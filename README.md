@@ -93,9 +93,19 @@ Escolha da rede, porque?
 
 Aplicaçao da rede 
 
+## 3.1 Métricas 
+Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiropositivos e verdadeiros negativos são classificações corretas, ou seja, umatumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações erradasções, ou seja, tumores classificados inversamente (um tumor maligno quedeve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
+## Precisão 
+Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos além de falsos positivos. Assim, uma baixa precisão indica que o número de classificações corretas (malignos) é muito baixo, ou o número de falsos positivos (tumores benignos classificados como malignos) é alta
+
+
+
+
 Otimizacao de parametros
 
 Resultados
+
+
 
 
 ### 4. Conclusões
