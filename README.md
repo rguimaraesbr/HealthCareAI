@@ -73,7 +73,18 @@ A partir de uma analise comparativa da utilizacao destas redes como classificado
 
 ### 2. Modelagem
 
-Modelagem dos dados
+O Dataset que vamos trabalhar vem de um estudo  2016 "Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases" by Andrew Janowczyk and Anant Madabhushi. Dentre os casos de uso,  temos a classificação de IDC, para a qual eles tiveram uma pontuação F de 0,7648 em 50k patches de teste. O dataset refere-se a 279 pacientes, cada um com um ID exclusivo. 
+
+Cada paciente tem uma pasta dedicada, nomeada por seu ID, com duas subpastas - 0 e 1. A pasta chamada 0 consiste em imagens de amostras de tecido benigno (aquelas sem marcadores IDC). A pasta denominada 1 consiste em imagens de amostras de tecidos malignos (aquelas que contêm marcadores IDC).
+
+Cada patch tem um formato de nome distinto - uxXyYclassC.png, onde u é o ID do paciente, x é a coordenada X da qual o patch foi extraído, y é a coordenada Y da qual o patch foi extraído e a classe é 0 ou 1, denotando se os marcadores IDC estão presentes ou não naquele patch.
+
+Fazendo a reconstrução de uma imagem so com base nos arquivos, conseguimos ver a composicao 
+
+
+
+
+
 
 Resumo das redes Convolucionais
 
