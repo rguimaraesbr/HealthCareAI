@@ -95,9 +95,13 @@ Aplicaçao da rede
 
 ## 3.1 Métricas 
 Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiropositivos e verdadeiros negativos são classificações corretas, ou seja, umatumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações erradasções, ou seja, tumores classificados inversamente (um tumor maligno quedeve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
-## Precisão 
+#### Precisão 
 Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos além de falsos positivos. Assim, uma baixa precisão indica que o número de classificações corretas (malignos) é muito baixo, ou o número de falsos positivos (tumores benignos classificados como malignos) é alta
 
+![precisao](https://user-images.githubusercontent.com/79609143/209995973-dbad9549-2765-4a4f-8dbf-290a841de542.png)
+
+#### Acurácia 
+É o percentual de classificações corretas, uma acurácia baixa significa que o numero de classificações incorretas (Falsos positivos e Falsos Negativos) é alta. 
 
 
 
