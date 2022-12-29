@@ -58,10 +58,9 @@ Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de 
 
 O Transfer Learning xxx   
 
-Existe uma carencia de bases de imagens histologicas, com isso utilizaremos as redes ja pre treinadas e rodaremos em cima de uma amostra percentual de todo o dataset. 
-Com isso utilizaremos redes CNN pre treinadas, utilziando Transfer Learning
-. Podemos citar como vantagens dessa abordagem:
-• Pode-se usar modelos que foram cuidadosamente projetados por especialistas
+Existe uma carencia de bases de imagens histologicas, com isso utilizaremos as redes ja pre treinadas  utilziando Transfer Learning
+Podemos citar como vantagens dessa abordagem:
+• Pode-se usar modelos que foram cuidadosamente projetados por especialistas;
 • Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
 • Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
 
@@ -106,11 +105,6 @@ erradasções, ou seja, tumores classificados inversamente (um tumor maligno que
 Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos além de falsos positivos. Assim, uma baixa precisão indica que o número de classificações corretas (malignos) é muito baixo, ou o número de falsos positivos (tumores benignos classificados como malignos) é alta
 
 ![precisao](https://user-images.githubusercontent.com/79609143/209995973-dbad9549-2765-4a4f-8dbf-290a841de542.png)
-
-#### Acurácia 
-É o percentual de classificações corretas, uma acurácia baixa significa que o numero de classificações incorretas (Falsos positivos e Falsos Negativos) é alta. 
-
-![acuracia](https://user-images.githubusercontent.com/79609143/209997654-6d652b0b-fc37-4779-8d84-f4e4a02808b7.png)
 
 #### Recall
 É a razão entre os verdadeiros positivos e verdadeiros positivos mais falsos positivos. Esta metrica indica que o algoritmo está funcionando bem na identificação de verdadeiros positivos. Por outro lado, se esta métrica for baixa,pode significar que um grande número de tumores benignos está sendo classificado de forma errada. Assim, esta métrica é fundamental para minimizar onúmero de falsos negativos, que é o pior cenário para o paciente.
