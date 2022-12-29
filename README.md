@@ -88,8 +88,6 @@ Após analisar todo o dataset obtivemos a seguinte distribuição
 ![class imbalance](https://user-images.githubusercontent.com/79609143/210016827-4140508d-4fea-442a-90e6-99478ae6da21.png)
 
 
-
-
 Resumo das redes Convolucionais
 
 Comparacao entre os modelos 
@@ -117,6 +115,20 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 É a media hamônica entre precisão e recall. Se olharmos para précisão e recall, essas métricas visam ajudar a detectar tumores malignos.No entanto, a precisão é sensível a falsos positivos, enquanto o recall é afetada por falsos negativos. Assim, o F1 Score fornece uma visão geral, em que valores altos podem indicar que o modelo tem um bom desempenho, não dando falsas classificações
 
 ![f1score](https://user-images.githubusercontent.com/79609143/210003249-3ba596de-3af3-45c9-8e08-40f027e59bfb.png)
+
+Ja que nao iremos  balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes
+
+Portanto usarems métricas além da precisão ao ajustar o modelo, já que a precisão não será um bom substituto para o desempenho.
+
+Em casos como esses, Recall é uma ótima métrica a ser considerada, pois é calculada dividindo-se os verdadeiros positivos pelo número de exemplos relevantes (quão correto o modelo está ao descobrir os verdadeiros positivos). 
+
+A AUC (Area Under Curve) é uma boa medida de quão bem o modelo distingue entre as classes, portanto, uma alta pontuação AUC é uma boa indicação de quão bem um modelo pode funcionar, mas está longe de ser sacrossanto.
+
+Será mais difícil orientar a rede para representar com precisão as instâncias IDC(+) em suas representações de conhecimento interno, pois há um incentivo maior em enviar 0 previsões para a maioria das entradas. Em outras palavras - o equilíbrio de precisão e recall será difícil.
+
+Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final
+
+Idealmente - encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
 
 
 Otimizacao de parametros
