@@ -30,15 +30,15 @@ Como passo inicial realizaremos a análise do Dataset, depois aplicaremos divers
 
 
 ### 1. Introdução
-No Brasil, segundo o Instituto Nacional de Câncer (INCA), o câncer de mama também é o tipo de câncer que mais acomete as mulheres no país (excluídos os tumores de pele não melanoma). Para 2019, foram estimados 59.700 casos novos, o que representa uma taxa de incidência de 51,29 casos por 100 mil mulheres. A única região do país em que o câncer de mama não é o mais comum entre as mulheres é a Norte, onde o de colo de útero ocupa a primeira posição.
-
-Com uma taxa de 13,68 óbitos/100 mil mulheres em 2015, a mortalidade por câncer de mama (ajustada pela população mundial) apresenta uma curva ascendente e representa a primeira causa de morte por câncer nas mulheres brasileiras. O Sul e o Sudeste são as regiões que apresentam as maiores taxas de mortalidade, com 15,26 e 14,56 óbitos/100 mil mulheres em 2015, respectivamente.
+No Brasil, segundo o Instituto Nacional de Câncer (INCA), o câncer de mama  é o tipo de câncer que mais acomete as mulheres no país (excluídos os tumores de pele não melanoma). Para 2019, foram estimados 59.700 casos novos, o que representa uma taxa de incidência de 51,29 casos por 100 mil mulheres. Com uma taxa de 13,68 óbitos/100 mil mulheres em 2015, a mortalidade por câncer de mama (ajustada pela população mundial) apresenta uma curva ascendente e representa a primeira causa de morte por câncer nas mulheres brasileiras.
 
 Tumores são feixes de células que não deveriam se agrupar e crescem em pedaços sólidos. Os tumores podem ser benignos (não cancerígenos) e confinados a uma região específica e podem não causar problemas. Eles podem crescer e causar problemas devido ao tamanho. Se um tumor começa a crescer fora do grupo de células - torna-se maligno (cancerígeno). O câncer pode invadir o tecido local ou metastatizar e atacar outros tecidos. Temos uma gama de informação sobre tumores e câncer, incluindo subtipos e seus graus, mas o conjunto de dados com o qual estamos trabalhando simplesmente classifica as imagens como não cancerígenas (benignas) e cancerosas (malignas). O Carcinoma Ductal Invasivo (CDI) é de longe o subtipo de câncer de mama mais comum, representando 80% dos casos.
 
 Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais facilmente tratável quando detectado precocemente. A Histologia estuda os tecidos e a Patologia estuda as doenças. A histopatologia é a ciencia que estuda as doenças em tecidos,  patologistas examinam imagens de tecido (imagens de histologia) e chegam a um veredicto. De certa forma, os patologistas estão realizando a classificação (positiva ou negativa) com base em padrões e ocorrências nas imagens (características visuais). Este é um processo longo e trabalhoso, requerendo muita experiência.
 
-Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, a taxa de sobrevida em cinco anos é de 86%. Se o câncer se espalhou para áreas distantes do  corpo, a taxa de sobrevivência de cinco anos é de 28%.
+Inserir imagem histopatologia
+
+Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, esta taxa é de 86% e caso tenha se  espalhado para áreas distantes do  corpo,  é de 28%.
 
 ## 1.2 Aplicação de inteligencia artificial na medicina
 
@@ -50,8 +50,6 @@ A aplicação do aprendizado de máquina na medicina é vasta e um tópico extre
     Diagnóstico por imagem médica -Diagnóstico de doenças com base em imagens, etc.)
     Descoberta de drogas - geração de estruturas como proteínas ou moléculas semelhantes a drogas, previsão de bioatividade, etc.
 
-
-Diagnóstico por imagem médica é um campo que está ajudando a automatizar e até mesmo melhorar a precisão do diagnóstico com base em imagens médicas.
 
 Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de prática, intuição e experiência para diagnosticar com um relativo nível de certeza se alguém sofre de uma condição ou não com base em imagens médicas. Automatizar esse processo tem implicações significativas para a velocidade do diagnóstico - e quanto mais rápido alguém for diagnosticado, mais rápido poderá receber tratamento. Em alguns casos, esse tempo pode ser essencial.
 
