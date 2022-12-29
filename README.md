@@ -44,7 +44,7 @@ Algumas áreas podem não ter equipamentos ou recursos humanos necessários para
 
 A Inteligencia Artifial tem sido cada vez mais empregada na medicina e está ajudando a salvar vidas de uma ampla variedade de condições médicas. 
 
-A aplicação do aprendizado de máquina na medicina é vasta e um tópico extremamente complexo por si só, mas algumas das principais áreas incluem:
+A aplicação do aprendizado de máquina na medicina é vasta e um tópico extremamente complexo por si só,  algumas das principais áreas incluem:
 
     Medicina de Precisão - Adaptação de medicamentos para indivíduos
     Diagnóstico por imagem médica -Diagnóstico de doenças com base em imagens, etc.)
