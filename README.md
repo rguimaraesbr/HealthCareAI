@@ -145,7 +145,7 @@ classificação em esquema de transferência de aprendizado. Escolhemos a Effici
 
 Realizamos o tunning dos parametros da rede selecionada, utilizando a ferramenta de tunning do Keras. Foi verificado entretanto pouca melhoria nas metricas de avaliação do aprendizado da rede. Nossa concluão e que o maior ofensor para melhoria era o desbalanceamento da base de dados que apresentava um total de 20% de amostras positivas somente, o que era esperado devido a natureza do problema.
 
-Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama. Como trabalho futuro indicamos a utilização de redes mais potentes e estudos para melhoria no desabalanceamento da base de dados. 
+Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama. Como trabalho futuro indicamos a utilização de redes mais potentes como por exemplo EfficientNetB2 a EfficientNetB7  e estudos para melhoria no desabalanceamento da base de dados em questão.
 
 
 Conclusao
