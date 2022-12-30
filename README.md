@@ -25,7 +25,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 O Carcinoma Ductal Invasivo (CDI) é o subtipo mais comum de todos os cânceres de mama. O câncer de mama é a forma mais comum de câncer em mulheres. Identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.O diagnóstico rápido, preciso e precoce do câncer melhora a probabilidade de sobrevivência. 
 
-Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas utilizadas inicialmente em xx.
+Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas obtidas de (https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images).
 
 Como passo inicial realizaremos a análise do Dataset, depois aplicaremos diversos modelos de redes convolucionais para análise de um fragmento do dataset. A partir da comparação entres o resultados da aplicação das redes,escolheremos uma rede para aplicar todo o conjunto de amostras, explicitando os resultados obtidos.
 
@@ -87,12 +87,18 @@ Após analisar todo o dataset obtivemos a seguinte distribuição
 
 ![class imbalance](https://user-images.githubusercontent.com/79609143/210016827-4140508d-4fea-442a-90e6-99478ae6da21.png)
 
+Realizamos a implementação de quatro modelos de redes convolucionais para trabalhar com esse dataset, utilizando a bibiloteca Keras.
+- Rede desenvolvida do zero
+- Resnet
+- EfficientNet0
+- xxx
 
-Resumo das redes Convolucionais
+Para fins de comparação da aplicabilidade das redes utilizamos uma amostra menor do dataset.  Segue o resultado comparativo 
 
-Comparacao entre os modelos 
+XXX
 
-Escolha da rede, porque?
+De
+
 
 ### 3. Resultados
 
