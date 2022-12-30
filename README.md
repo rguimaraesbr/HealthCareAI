@@ -58,17 +58,17 @@ Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de 
 
 ## 1.3 Redes Convolucionais e Transfer Learning aplicadas ao diagnostico de cancer de mama
 
-  
 
-Existe uma carencia de bases de imagens histologicas, com isso utilizaremos as redes ja pre treinadas  utilziando Transfer Learning
+Existe uma carência de bases de imagens histológicas, com isso utilizamos as redes ja pré treinadas com Transfer Learning 
+
 Podemos citar como vantagens dessa abordagem:
-• Pode-se usar modelos que foram cuidadosamente projetados por especialistas;
-• Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
-• Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
+- • Pode-se usar modelos que foram cuidadosamente projetados por especialistas;
+- • Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
+- • Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
 
-Utilizamos nesse trabalho 4 redes: uma rede escrita "from scratch", EfficientNet0 da Google, Resnet e Xception da Google
+Nesse trabalho consideramos 4 redes: uma rede escrita "from scratch", EfficientNet0, Resnet e Xception da Google
 
-A partir de uma analise comparativa da utilizacao destas redes como classificadores numa amostra de todo o dataset, escolhemos uma rede para rodar o dataset integralmente de forma otimizada.
+A partir de uma análise comparativa da utilização destas redes como classificadores numa amostra reduzida de todo o dataset, escolhemos uma rede para rodar o dataset integralmente de forma otimizada.
 
 
 ### 2. Modelagem
