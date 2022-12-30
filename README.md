@@ -140,9 +140,12 @@ Resultados
 
 ### 4. Conclusões
 
-Este trabalho utilizou redes neurais convolucionais em um banco de dados de xxx imagens histopatologicas de xx pacientes, classificando-os em duas classes: cancer e nao cancer. Durante o treinamento das redes, utilizamos o transfer learning das seguintes arquiteturas de redes neurais convolucionais: AlexNet, GoogLeNet, ResNet-18, VGG-16 e VGG-19 para uma pequena porçao dos dados. Escolhemos a EfficientNet0 para poder rodar o total das amostras 
+Este trabalho utilizou redes neurais convolucionais em um banco de dados de xxx imagens histopatologicas de xx pacientes, classificando-os em duas classes: cancer e nao cancer. Durante o treinamento das redes, utilizamos o transfer learning das seguintes arquiteturas de redes neurais convolucionais: AlexNet, GoogLeNet, ResNet-18, VGG-16 e VGG-19 para uma pequena porçao dos dados.Os resultados mostraram que as diferentes estruturas convolucionais  abordam de maneira competente o problema de
+classificação em esquema de transferência de aprendizado. Escolhemos a EfficientNet0 para poder rodar o total das amostras, devido a que possui menor numero de parametros, apresentando custo beneficio adequado. 
 
-Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama.
+Realizamos o tunning dos parametros da rede selecionada, utilizando a ferramenta de tunning do Keras. Foi verificado entretanto pouca melhoria nas metricas de avaliação do aprendizado da rede. Nossa concluão e que o maior ofensor para melhoria era o desbalanceamento da base de dados que apresentava um total de 20% de amostras positivas somente, o que era esperado devido a natureza do problema.
+
+Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama. Como trabalho futuro indicamos a utilização de redes mais potentes e estudos para melhoria no desabalanceamento da base de dados. 
 
 
 Conclusao
