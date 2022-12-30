@@ -2,7 +2,7 @@
 # Aplicação de  Modelos de Redes Neurais Convolucionais na classificação de exames histológicos de Cancer de Mama
 
 #### Aluno: [Robson Guimarães](https://github.com/rguimaraesbr)
-#### Orientadora: [Leonardo ](https://github.com/link_do_github).
+#### Orientadora: [Leonardo Forero Mendoza ](https://github.com/leofome8).
 
 ---
 
@@ -42,37 +42,18 @@ Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais fa
 
 Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, esta taxa é de 86% e caso tenha se  espalhado para áreas distantes do  corpo,  é de 28%.
 
-## 1.2 Aplicação de inteligencia artificial na medicina
-
-A Inteligencia Artifial tem sido cada vez mais empregada na medicina e está ajudando a salvar vidas de uma ampla variedade de condições médicas. 
-
 A aplicação do aprendizado de máquina na medicina é vasta e um tópico extremamente complexo por si só,  algumas das principais áreas incluem:
 
     Medicina de Precisão - Adaptação de medicamentos para indivíduos
     Diagnóstico por imagem médica -Diagnóstico de doenças com base em imagens, etc.)
     Descoberta de drogas - geração de estruturas como proteínas ou moléculas semelhantes a drogas, previsão de bioatividade, etc.
 
-
 Descobrir se alguém sofre de uma determinada doença é difícil. Leva anos de prática, intuição e experiência para diagnosticar com um relativo nível de certeza se alguém sofre de uma condição ou não com base em imagens médicas. Automatizar esse processo tem implicações significativas para a velocidade do diagnóstico - e quanto mais rápido alguém for diagnosticado, mais rápido poderá receber tratamento. Em alguns casos, esse tempo pode ser essencial.
-
-
-## 1.3 Redes Convolucionais e Transfer Learning aplicadas ao diagnostico de cancer de mama
-
-
-Existe uma carência de bases de imagens histológicas, com isso utilizamos as redes ja pré treinadas com Transfer Learning 
-
-Podemos citar como vantagens dessa abordagem:
-- • Pode-se usar modelos que foram cuidadosamente projetados por especialistas;
-- • Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
-- • Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
-
-Nesse trabalho consideramos 4 redes: uma rede escrita "from scratch", EfficientNet0, Resnet e Xception da Google
-
-A partir de uma análise comparativa da utilização destas redes como classificadores numa amostra reduzida de todo o dataset, escolhemos uma rede para rodar o dataset integralmente de forma otimizada.
 
 
 ### 2. Modelagem
 
+#### 2.1 Dataset
 O Dataset que vamos trabalhar vem de um estudo  2016 "Deep learning for digital pathology image analysis: A comprehensive tutorial with selected use cases" by Andrew Janowczyk and Anant Madabhushi. Dentre os casos de uso,  temos a classificação de IDC, para a qual eles tiveram uma pontuação F de 0,7648 em 50k patches de teste. O dataset refere-se a 279 pacientes, cada um com um ID exclusivo. 
 
 Cada paciente tem uma pasta dedicada, nomeada por seu ID, com duas subpastas - 0 e 1. A pasta chamada 0 consiste em imagens de amostras de tecido benigno (aquelas sem marcadores IDC). A pasta denominada 1 consiste em imagens de amostras de tecidos malignos (aquelas que contêm marcadores IDC).
@@ -87,17 +68,25 @@ Após analisar todo o dataset obtivemos a seguinte distribuição
 
 ![class imbalance](https://user-images.githubusercontent.com/79609143/210016827-4140508d-4fea-442a-90e6-99478ae6da21.png)
 
-Realizamos a implementação de quatro modelos de redes convolucionais para trabalhar com esse dataset, utilizando a bibiloteca Keras.
-- Rede desenvolvida do zero
-- Resnet
-- EfficientNet0
-- xxx
+Verficamos um desbalanceamento entre os dados, sendo que a classe negativa equivale a 71% dos dados. Isto decorre naturalmente devido a natureza dos dados, visto a incidência de cancer na população e tambem que os cortes de um tumor correspondem a partes de uma imagem histólogica completa.Será mais difícil orientar as rede para representar com precisão as instâncias IDC(+) em suas representações de conhecimento interno, pois há um incentivo maior em enviar 0 previsões para a maioria das entradas. Para este trabalho não iremos realizar tentativas de balanceamento do dataset como undersampling ou oversampling, visto que poderia comprometer a qualidade dos dados para treinamento e como não temos acesso a um patologista, não teriamos como contrapor a nova base com alguma visão tecnica. Entretanto para minimizar o desbalanceamento dos dados no treinamento aumentamos os pesos das amostras positivas em relação as positivas.
+
+#### 2.2 Aplicação do Modelo 
+Existe uma carência de redes e  bases de imagens histológicas, com isso utilizamos as redes ja pré treinadas com Transfer Learning 
+
+Podemos citar como vantagens dessa abordagem:
+- • Pode-se usar modelos que foram cuidadosamente projetados por especialistas;
+- • Como os especialistas criaram esses modelos, não é necessario se preocupar com qual arquitetura ou camadas usar ou incluir;
+- • Devido ao seu design cuidadoso, eles tendem a ter um bom desempenho em detecção de imagem.
+
+Nesse trabalho consideramos 4 redes: uma rede escrita "from scratch", EfficientNet0, Resnet e Xception da Google
+
+A partir de uma análise comparativa da utilização destas redes como classificadores numa amostra reduzida de todo o dataset, escolhemos uma rede para rodar o dataset integralmente de forma otimizada.
 
 Para fins de comparação da aplicabilidade das redes utilizamos uma amostra menor do dataset.  Segue o resultado comparativo 
 
 XXX
 
-De
+### 2.3 Escolha da rede mais aprorpriada
 
 
 ### 3. Resultados
@@ -122,19 +111,13 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 
 ![f1score](https://user-images.githubusercontent.com/79609143/210003249-3ba596de-3af3-45c9-8e08-40f027e59bfb.png)
 
-Ja que nao iremos  balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes
-
-Portanto usarems métricas além da precisão ao ajustar o modelo, já que a precisão não será um bom substituto para o desempenho.
+Devido a decisão de não balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes, portanto usarems métricas além da precisão ao ajustar o modelo
 
 Em casos como esses, Recall é uma ótima métrica a ser considerada, pois é calculada dividindo-se os verdadeiros positivos pelo número de exemplos relevantes (quão correto o modelo está ao descobrir os verdadeiros positivos). 
 
 A AUC (Area Under Curve) é uma boa medida de quão bem o modelo distingue entre as classes, portanto, uma alta pontuação AUC é uma boa indicação de quão bem um modelo pode funcionar, mas está longe de ser sacrossanto.
 
-Será mais difícil orientar a rede para representar com precisão as instâncias IDC(+) em suas representações de conhecimento interno, pois há um incentivo maior em enviar 0 previsões para a maioria das entradas. Em outras palavras - o equilíbrio de precisão e recall será difícil.
-
-Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final
-
-Idealmente - encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
+Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final.Idealmente encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
 
 
 Otimizacao de parametros
@@ -151,15 +134,14 @@ classificação em esquema de transferência de aprendizado. Escolhemos a Effici
 
 Realizamos o tunning dos parametros da rede selecionada, utilizando a ferramenta de tunning do Keras. Foi verificado entretanto pouca melhoria nas metricas de avaliação do aprendizado da rede. Nossa concluão e que o maior ofensor para melhoria era o desbalanceamento da base de dados que apresentava um total de 20% de amostras positivas somente, o que era esperado devido a natureza do problema.
 
-Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama. Como trabalho futuro indicamos a utilização de redes mais potentes como por exemplo EfficientNetB2 a EfficientNetB7  e estudos para melhoria no desabalanceamento da base de dados em questão.
+Nossos resultados mostram o grande potencial do uso de técnicas de deep learning combinadas com imagens histopatologicas no auxílio ao diagnóstico do câncer de mama. Como trabalho futuro indicamos a utilização de redes mais potentes como por exemplo EfficientNetB2 a EfficientNetB7  e estudos para melhoria no desabalanceamento da base de dados em questão, utilizando por exemplo a bibiloteca inbalance trabalhando em conjunto com um patologista.
 
 
-Conclusao
-Proximos trabalhos
+
 
 ---
 
-Matrícula: 123.456.789
+Matrícula: 211.000.225
 
 Pontifícia Universidade Católica do Rio de Janeiro
 
