@@ -2,7 +2,7 @@
 # Aplicação de  Modelos de Redes Neurais Convolucionais na classificação de exames histológicos de Cancer de Mama
 
 #### Aluno: [Robson Guimarães](https://github.com/rguimaraesbr)
-#### Orientadora: [Leonardo Forero Mendoza ](https://github.com/leofome8).
+#### Orientador: [Leonardo Forero Mendoza ](https://github.com/leofome8).
 
 ---
 
