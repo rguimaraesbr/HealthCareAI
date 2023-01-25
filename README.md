@@ -60,7 +60,7 @@ Cada paciente tem uma pasta dedicada, nomeada por seu ID, com duas subpastas - 0
 
 Cada patch tem um formato de nome distinto - uxXyYclassC.png, onde u é o ID do paciente, x é a coordenada X da qual o patch foi extraído, y é a coordenada Y da qual o patch foi extraído e a classe é 0 ou 1, denotando se os marcadores IDC estão presentes ou não naquele patch.
 
-Fazendo a reconstrução de uma imagem so com base nos arquivos, conseguimos ver a composicao 
+Fazendo a reconstrução de uma imagem so com base nos arquivos, conseguimos ver a composição
 
 ![breast cancer](https://user-images.githubusercontent.com/79609143/210016132-a2059f90-abd2-4350-8b02-81b9abd0687c.png)
 
