@@ -86,7 +86,7 @@ A partir de uma análise comparativa da utilização destas redes como classific
 
 Para fins de comparação da aplicabilidade das redes utilizamos uma amostra menor do dataset.  Segue o resultado comparativo 
 
-XXX
+![comparacao](https://user-images.githubusercontent.com/79609143/214692337-0f17d4d9-a2c6-4e9f-bac6-65528e55fbc5.png)
 
 ### 2.3 Escolha da rede mais aprorpriada
 
