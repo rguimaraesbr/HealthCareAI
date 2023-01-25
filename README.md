@@ -23,7 +23,7 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ### Resumo
 
-O Carcinoma Ductal Invasivo (CDI) é o subtipo mais comum de todos os cânceres de mama. O câncer de mama é a forma mais comum de câncer em mulheres. Identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.O diagnóstico rápido, preciso e precoce do câncer melhora a probabilidade de sobrevivência. 
+ O câncer de mama é a forma mais comum de câncer em mulheres, sendo o Carcinoma Ductal Invasivo (CDI) o subtipo mais comum. O diagnóstico rápido, preciso e precoce do câncer podmelhora a probabilidade de sobrevivência. Portanto identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.
 
 Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas obtidas de (https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images).
 
@@ -32,9 +32,9 @@ Como passo inicial realizaremos a análise do Dataset, depois aplicaremos divers
 
 
 ### 1. Introdução
-No Brasil, segundo o Instituto Nacional de Câncer (INCA), o câncer de mama  é o tipo de câncer que mais acomete as mulheres no país (excluídos os tumores de pele não melanoma). Para 2019, foram estimados 59.700 casos novos, o que representa uma taxa de incidência de 51,29 casos por 100 mil mulheres. Com uma taxa de 13,68 óbitos/100 mil mulheres em 2015, a mortalidade por câncer de mama (ajustada pela população mundial) apresenta uma curva ascendente e representa a primeira causa de morte por câncer nas mulheres brasileiras.
+No Brasil, segundo o Instituto Nacional de Câncer (INCA), o câncer de mama  é o tipo de câncer que mais acomete as mulheres no país (excluídos os tumores de pele não melanoma). Para 2019, estimou-se 59.700 casos novos, o que representa uma taxa de incidência de 51,29 casos por 100 mil mulheres. Com uma taxa de 13,68 óbitos/100 mil mulheres em 2015, a mortalidade por câncer de mama (ajustada pela população mundial) apresenta uma curva ascendente e representa a primeira causa de morte por câncer nas mulheres brasileiras. O Carcinoma Ductal Invasivo (CDI) é de longe o subtipo de câncer de mama mais comum, representando 80% dos casos.
 
-Tumores são feixes de células que não deveriam se agrupar e crescem em pedaços sólidos. Os tumores podem ser benignos (não cancerígenos) e confinados a uma região específica e podem não causar problemas. Eles podem crescer e causar problemas devido ao tamanho. Se um tumor começa a crescer fora do grupo de células - torna-se maligno (cancerígeno). O câncer pode invadir o tecido local ou metastatizar e atacar outros tecidos. Temos uma gama de informação sobre tumores e câncer, incluindo subtipos e seus graus, mas o conjunto de dados com o qual estamos trabalhando simplesmente classifica as imagens como não cancerígenas (benignas) e cancerosas (malignas). O Carcinoma Ductal Invasivo (CDI) é de longe o subtipo de câncer de mama mais comum, representando 80% dos casos.
+Tumores são feixes de células que não deveriam se agrupar e crescem em pedaços sólidos. Os tumores podem ser benignos (não cancerígenos) e por ser confinados a uma região específica podem não causar problemas. Eles podem crescer e causar problemas devido ao tamanho. Se um tumor começa a crescer fora do grupo de células - torna-se maligno (cancerígeno). O câncer pode invadir o tecido local ou metastatizar e atacar outros tecidos. Temos uma gama de informação sobre tumores e câncer, incluindo subtipos e seus graus, mas o conjunto de dados com o qual estamos trabalhando simplesmente classifica as imagens como não cancerígenas (benignas) e cancerosas (malignas). 
 
 Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais facilmente tratável quando detectado precocemente. A Histologia estuda os tecidos e a Patologia estuda as doenças. A histopatologia é a ciencia que estuda as doenças em tecidos,  patologistas examinam imagens de tecido (imagens de histologia) e chegam a um veredicto. De certa forma, os patologistas estão realizando a classificação (positiva ou negativa) com base em padrões e ocorrências nas imagens (características visuais). Este é um processo longo e trabalhoso, requerendo muita experiência.
 
@@ -96,8 +96,7 @@ XXX
 Aplicaçao da rede 
 
 ## 3.1 Métricas 
-Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiropositivos e verdadeiros negativos são classificações corretas, ou seja, umatumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações 
-erradasções, ou seja, tumores classificados inversamente (um tumor maligno quedeve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
+Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiro positivos e verdadeiros negativos são classificações corretas, ou seja, um tumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações erradas, ou seja, tumores classificados inversamente (um tumor maligno que deve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
 #### Precisão 
 Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos além de falsos positivos. Assim, uma baixa precisão indica que o número de classificações corretas (malignos) é muito baixo, ou o número de falsos positivos (tumores benignos classificados como malignos) é alta
 
@@ -113,7 +112,7 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 
 ![f1score](https://user-images.githubusercontent.com/79609143/210003249-3ba596de-3af3-45c9-8e08-40f027e59bfb.png)
 
-Devido a decisão de não balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes, portanto usarems métricas além da precisão ao ajustar o modelo
+Devido a decisão de não balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes, portanto usaremos métricas além da precisão ao ajustar o modelo
 
 Em casos como esses, Recall é uma ótima métrica a ser considerada, pois é calculada dividindo-se os verdadeiros positivos pelo número de exemplos relevantes (quão correto o modelo está ao descobrir os verdadeiros positivos). 
 
