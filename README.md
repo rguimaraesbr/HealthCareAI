@@ -121,7 +121,9 @@ A AUC (Area Under Curve) é uma boa medida de quão bem o modelo distingue entre
 Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final.Idealmente encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
 
 
-Resultados
+Conforme tabela abaixo, foi obtido apos a otimização um F1 Score de 89% para negativo e 71% para positivo, refletindo ainda o desbalanceamento da base. 
+
+![resultado final](https://user-images.githubusercontent.com/79609143/214695251-8067439d-bc9e-4170-aa64-e54168938c33.png)
 
 
 
