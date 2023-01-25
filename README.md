@@ -40,7 +40,7 @@ Muitas vezes, o câncer é fisicamente perceptível no tecido e pode ser mais fa
 
 ![JPI-7-29-g001](https://user-images.githubusercontent.com/79609143/209991777-f05452e8-5714-4626-a9fb-c87ce9e2f2fd.jpg)
 
-Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável, principalmente quando detectado e tratado precocemente. A taxa de sobrevivência de cinco anos para o carcinoma ductal invasivo localizado é alta - quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, esta taxa é de 86% e caso tenha se  espalhado para áreas distantes do  corpo,  é de 28%.
+Algumas áreas podem não ter equipamentos ou recursos humanos necessários para se ter diagnóstico de forma rápida, fazendo com que os pacientes tenham que se deslocar para serem diagnosticados, prolongando o período em que não podem receber tratamento. Entretanto o carcinoma ductal invasivo (IDC) é bastante curável sendo que a taxa de sobrevivência de cinco anos é quase 100% quando tratado precocemente. Se o câncer se espalha para outros tecidos da região, esta taxa é de 86% e caso tenha se  espalhado para áreas distantes do  corpo,  é de 28%.
 
 A aplicação do aprendizado de máquina na medicina é vasta e um tópico extremamente complexo por si só,  algumas das principais áreas incluem:
 
