@@ -88,8 +88,8 @@ Para fins de comparação da aplicabilidade das redes utilizamos uma amostra men
 
 ![comparacao](https://user-images.githubusercontent.com/79609143/214692337-0f17d4d9-a2c6-4e9f-bac6-65528e55fbc5.png)
 
-### 2.3 Escolha da rede mais aprorpriada
 
+Escolhemos para seguir adiante o Effnet, devido a ter o melhor recall e AUC equivalente ao Xception, além exigir menor capacidade de computação.
 
 ### 3. Resultados
 
@@ -120,8 +120,6 @@ A AUC (Area Under Curve) é uma boa medida de quão bem o modelo distingue entre
 
 Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final.Idealmente encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
 
-
-Otimizacao de parametros
 
 Resultados
 
