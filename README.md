@@ -130,8 +130,7 @@ Conforme tabela abaixo, foi obtido apos a otimização um F1 Score de 89% para n
 
 ### 4. Conclusões
 
-Este trabalho utilizou redes neurais convolucionais em um banco de dados de xxx imagens histopatologicas de xx pacientes, classificando-os em duas classes: cancer e nao cancer. Durante o treinamento das redes, utilizamos o transfer learning das seguintes arquiteturas de redes neurais convolucionais: AlexNet, GoogLeNet, ResNet-18, VGG-16 e VGG-19 para uma pequena porçao dos dados.Os resultados mostraram que as diferentes estruturas convolucionais  abordam de maneira competente o problema de
-classificação em esquema de transferência de aprendizado. Escolhemos a EfficientNet0 para poder rodar o total das amostras,  devido a que possui menor numero de parametros, apresentando custo beneficio adequado. 
+Este trabalho utilizou redes neurais convolucionais em um banco de dados de xxx imagens histopatologicas de xx pacientes, classificando-os em duas classes: cancer e nao cancer. Durante o treinamento das redes, utilizamos o transfer learning das seguintes arquiteturas de redes neurais convolucionais: from scratch", EfficientNet0, Resnet e Xception para uma pequena porçao dos dados.Os resultados mostraram que as diferentes estruturas convolucionais  abordam de maneira competente o problema de classificação através da transferência de aprendizado. Escolhemos a EfficientNet0 para poder rodar o total das amostras,  devido a que possui menor numero de parametros, apresentando custo beneficio adequado. 
 
 Realizamos o tunning dos parametros da rede selecionada, utilizando a ferramenta de tunning do Keras. Foi verificado entretanto pouca melhoria nas metricas de avaliação do aprendizado da rede. Nossa concluão e que o maior ofensor para melhoria era o desbalanceamento da base de dados que apresentava um total de 20% de amostras positivas somente, o que era esperado devido a natureza do problema.
 
