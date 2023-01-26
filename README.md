@@ -112,11 +112,7 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 
 ![f1score](https://user-images.githubusercontent.com/79609143/210003249-3ba596de-3af3-45c9-8e08-40f027e59bfb.png)
 
-Devido a decisão de não balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes, portanto usaremos métricas além da precisão ao ajustar o modelo
-
-Em casos como esses, Recall é uma ótima métrica a ser considerada, pois é calculada dividindo-se os verdadeiros positivos pelo número de exemplos relevantes (quão correto o modelo está ao descobrir os verdadeiros positivos). 
-
-A AUC (Area Under Curve) é uma boa medida de quão bem o modelo distingue entre as classes, portanto, uma alta pontuação AUC é uma boa indicação de quão bem um modelo pode funcionar, mas está longe de ser sacrossanto.
+Devido a decisão de não balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes, portanto usaremos a metrica F1 Score além da precisão para ajustar o modelo
 
 Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final.Idealmente encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
 
