@@ -111,7 +111,7 @@ Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos al
 
 Devido a decisão de não balancear as classes é provável que a precisão seja uma métrica ruim para o desempenho da rede, porque 71% de precisão seria otimo considerando o desequilíbrio entre as classes, portanto usaremos a metrica F1 Score além da precisão para ajustar o modelo
 
-Como a F1 score é baseado na média harmônica entre recall e precisão. Como o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 para o modelo final.Idealmente encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada. Binary Crossentropy é o que usado quando estamos realizando a classificação binária, normalmente.
+Como a F1 score é baseado na média harmônica entre recall e precisão e o Keras não possui uma métrica F1 Score integrada, definiremos nossa própria métrica F1 score para o modelo final.Idealmente encontraríamos uma função de perda para alinhar com F1, mas não existe tal função de perda incorporada, portanto a Binary Crossentropy foi usada, pois estamos realizando a classificação binária.
 
 
 Conforme tabela abaixo, foi obtido apos a otimização um F1 Score de 89% para negativo e 71% para positivo, refletindo ainda o desbalanceamento da base. 
