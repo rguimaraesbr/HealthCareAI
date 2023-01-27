@@ -93,10 +93,7 @@ Escolhemos para seguir adiante o Effnet, devido a ter o melhor recall e AUC equi
 
 ### 3. Resultados
 
-Aplicaçao da rede 
-
-## 3.1 Métricas 
-Para a avaliação dos resultados  definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiro positivos e verdadeiros negativos são classificações corretas, ou seja, um tumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações erradas, ou seja, tumores classificados inversamente (um tumor maligno que deve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
+Para a avaliação dos resultados é necessário definir o significado de verdadeiros positivos, verdadeiros negativos, falsos positivos e falsos negativos. Verdadeiro positivos e verdadeiros negativos são classificações corretas, ou seja, um tumor maligno ou um tumor benigno classificado corretamente. Em contraste, falso positivo e falso negativo são classificações erradas, ou seja, tumores classificados inversamente (um tumor maligno que deve ser benigno e vice-versa).  Podemos então definir as métricas de avaliação:
 #### Precisão 
 Essa métrica é a razão entre verdadeiros positivos e verdadeiros positivos além de falsos positivos. Assim, uma baixa precisão indica que o número de classificações corretas (malignos) é muito baixo, ou o número de falsos positivos (tumores benignos classificados como malignos) é alta
 
