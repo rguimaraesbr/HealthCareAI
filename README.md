@@ -21,9 +21,9 @@ Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como
 
 ---
 
-### Resumo
+### Resumo:
 
- O câncer de mama é a forma mais comum de câncer em mulheres, sendo o Carcinoma Ductal Invasivo (CDI) o subtipo mais comum. O diagnóstico rápido, preciso e precoce do câncer podmelhora a probabilidade de sobrevivência. Portanto identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.
+  O câncer de mama é a forma mais comum de câncer em mulheres, sendo o Carcinoma Ductal Invasivo (CDI) o subtipo mais comum. O diagnóstico rápido, preciso e precoce do câncer podmelhora a probabilidade de sobrevivência. Portanto identificar e categorizar com precisão os subtipos de câncer de mama é uma tarefa clínica importante, e métodos automatizados podem ser usados para economizar tempo e reduzir erros.
 
 Neste projeto classificaremos o Carcinoma Ductal Invasivo em  benigno e maligno a partir de imagens histopatológicas. Para isso iremos aplicar Redes Neurais Covolucionais. Iremos utilizar uma base de dados do Kaggle de imagens histopatologicas obtidas de (https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images).
 
